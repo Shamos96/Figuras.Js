@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/javier-miranda-7bnvNN3R_eo-unsplash.jpg);
+    background-size: cover;
+
+}
+
+section{
+    width: 90%;
+    border: 2px solid black;
+    margin: 40px auto;
+    display: flex;
+}
+
+section .cont-botones{
+    width: 50%;
+    min-height: 500px;
+    text-align: center;
+    padding: 40px 20px;
+    border: 2px solid rgb(155, 9, 135);
+    backdrop-filter:  blur(5px);
+}
+
+
+
+section .cont-figura{
+    width: 50%;
+    min-height: 500px;
+    text-align: center;
+    padding: 40px 20px;
+    border: 2px solid rgb(120, 14, 226);
+    backdrop-filter:  blur(5px);
+}
+
+
+h2{
+    font-size: 26px;
+    color: #8a2be2;
+    /* font-family: ; */
+    margin-bottom: 50px;
+}
+
+.cont-botones button{
+    padding: 12px 30;
+    font-size: 20px;
+    background: transparent;
+    color: rgba(6, 205, 240, 0.842);
+    border: 2px solid rgba(75, 71, 131, 0.61);
+    margin: 10px;
+    transition: .4s;
+    
+}
+
+.cont-botones button:hover{
+    background-color: aqua;
+    color: violet;
+}
+
+#figura{
+    width: 220px;
+    height: 220px;
+    background: #099ce0;
+    border: 2px solid #3009e0;
+    margin: 0 300px;
+    transition: 1s;
+}
+
+#figura.circulo{
+    border-radius: 50%;
+    background-color: #09d2e0 ;
+    transition: 1s;
+    
+}
+
+#figura.rectangulo{
+    width: 350px;
+    color: #09d2e0 ;
+    border: 2px solid #3be009;
+
+}
+
+#figura.triangulo{
+    width: 0px;
+    height:  0px;
+    border-top: 0px;
+    border-left: solid  transparent 110px;
+    border-right: solid transparent 110px;
+    border-bottom: solid #09d2e0 220px;
+   
+    background: transparent;
+}
+
+#figura.girar{
+    transform: perspective(500px) rotateY(360deg);
+} 
+
+#figura.arriba{
+   transform: translateY(-50px);
+}
+
+#figura.abajo{
+    transform: translateY(600px);
+}
+
+#figura.izquierda{
+    transform: translateX(-309px);
+}
+
+#figura.derecha{
+    transform: translateX(209px);
+}
+
+#figura.ocultar{
+  background: transparent;  
+  border: transparent;
+}
+
+#figura.gif{
+    background: url(../img/R.gif);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+}
+
+#figura.degradado{
+    background: linear-gradient(#ffffff,#b845a5,#930ae2,#1f0679 );
+    
+    
+}
+
+
+
+.paneliz{
+    width: 350px;
+    height: 100vh;
+    position: absolute;
+    left: -450px;
+    top: 0;
+    z-index: 999;
+    background: #fff;
+    padding: 50px 40px;
+    transition: .5s;
+    
+}
+
+.paneliz h3{
+    font-size: 30px;
+    color: #8a2be2;
+    margin-top: 100px;
+
+}
+
+.paneliz ul a{
+    display: block;
+    padding: 10px 15px;
+    margin: 8px 0;
+    max-width: 250px;
+    background: hsla(199, 96%, 45%, 0.932);
+    color: #ece6e4;
+    margin-top: 50px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.paneliz.activo{
+    left: 0;
+}
+
+.close{
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    color: violet;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+
+.panelin{
+    width: 520%;
+    height: 90%;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    z-index: 999;
+    background: #fff;
+    padding: 50px 40px;
+    transition: .5s;
+    background: url(../img/mohamed-nohassi-odxB5oIG_iA-unsplash.jpg);
+    background-size: cover;
+}
+.panelin.activo{
+    bottom: 0;
+}
